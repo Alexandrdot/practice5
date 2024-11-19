@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Practice5MauiApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Practice5MauiApp"
+    Shell.FlyoutBehavior="Disabled">
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Title="Добавление автомобиля"
+        ContentTemplate="{DataTemplate local:CarPage}"
+        Route="CarPage" />
+    <ShellContent
+        Title="Добавление электоскутера"
+        ContentTemplate="{DataTemplate local:EScooterPage}"
+        Route="EScooterPage" />
+    <ShellContent
+        Title="Добавление т/с"
+        ContentTemplate="{DataTemplate local:TransportManagerPage}"
+        Route="TransportManagerPage" />
+    <ShellContent
+        Title="Удалить элемент"
+        ContentTemplate="{DataTemplate local:DeletePage}"
+        Route="DeletePage" />
+    <ShellContent
+        Title="Изменить характеристики"
+        ContentTemplate="{DataTemplate local:SetTransportPage}"
+        Route="SetTransportPage" />
+
+</Shell>
+

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/aleksandr/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/aleksandr/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/Users/aleksandr/.nuget/packages/" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk/2.2.14/build/runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk/2.2.14/build/runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.sharedlibrary/2.2.3/build/runtime.win10-arm.Microsoft.Net.Native.SharedLibrary.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.sharedlibrary/2.2.3/build/runtime.win10-arm.Microsoft.Net.Native.SharedLibrary.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk/2.2.14/build/runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk/2.2.14/build/runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.sharedlibrary/2.2.3/build/runtime.win10-arm.Microsoft.Net.Native.SharedLibrary.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.sharedlibrary/2.2.3/build/runtime.win10-arm.Microsoft.Net.Native.SharedLibrary.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk/2.2.14/build/runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk/2.2.14/build/runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.props')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.sharedlibrary/2.2.3/build/runtime.win10-arm.Microsoft.Net.Native.SharedLibrary.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.native.sharedlibrary/2.2.3/build/runtime.win10-arm.Microsoft.Net.Native.SharedLibrary.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net7.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">/Users/aleksandr/.nuget/packages/runtime.win10-arm.microsoft.net.uwpcoreruntimesdk/2.2.14</Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk>
+    <Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary)' == '' ">/Users/aleksandr/.nuget/packages/runtime.win10-arm.microsoft.net.native.sharedlibrary/2.2.3</Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net7.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">/Users/aleksandr/.nuget/packages/runtime.win10-arm.microsoft.net.uwpcoreruntimesdk/2.2.14</Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk>
+    <Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary)' == '' ">/Users/aleksandr/.nuget/packages/runtime.win10-arm.microsoft.net.native.sharedlibrary/2.2.3</Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net7.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">/Users/aleksandr/.nuget/packages/runtime.win10-arm.microsoft.net.uwpcoreruntimesdk/2.2.14</Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk>
+    <Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary)' == '' ">/Users/aleksandr/.nuget/packages/runtime.win10-arm.microsoft.net.native.sharedlibrary/2.2.3</Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary>
+  </PropertyGroup>
+</Project>

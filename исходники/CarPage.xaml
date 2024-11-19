@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practice5MauiApp.CarPage"
+             Title="CarPage"
+             BackgroundColor="LightGray">
+    <ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="LightBlue" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="HeightRequest" Value="80"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="LightBlue" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="HeightRequest" Value="80"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <!-- поля для ввода данных о авто -->
+        <Label Text="  Введите данные" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
+        <Entry x:Name="expfirm" Placeholder="Введите фирму"/>
+        <Entry x:Name="expmodel" Placeholder="Введите модель"/>
+        <Entry x:Name="expprice" Placeholder="Введите цену"/>
+        <Entry x:Name="exptorque" Placeholder="Введите крутящий момент"/>
+        <Button x:Name="click" Text="сохранить" Clicked="ClickSaveCar"/>
+
+    </StackLayout>
+</ContentPage>

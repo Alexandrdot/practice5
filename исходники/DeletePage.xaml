@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practice5MauiApp.DeletePage"
+             Title="DeletePage"
+             BackgroundColor="LightGray"
+             >
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BackgroundColor" Value="LightBlue" />
+
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="LightBlue" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="HeightRequest" Value="80"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        
+    </ContentPage.Resources>
+
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+         <ListView x:Name="list" ItemSelected="UserChoice" BackgroundColor="LightGray" Margin="20" RowHeight="80">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <HorizontalStackLayout>
+                                <StackLayout>
+                                    <Label Text="{Binding Firm, StringFormat=' Фирма: {0}'}" />
+                                    <Label Text="{Binding Model, StringFormat='Модель: {0}'} " />
+                                    <Label Text="{Binding Price, StringFormat=' Цена: {0}'} " />
+                                </StackLayout>
+
+                                <Label Text="{Binding Torque, StringFormat=' Крутящий момент: {0}    (Автомобиль)'}" />
+                                <Label Text="{Binding TimeWorking, StringFormat=' Время работы: {0}  (Электросамокат)'}" />
+                           
+                                
+                            </HorizontalStackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+         </ListView>
+         <Button x:Name="deleteobject" Text="Удалить выбранный обьект" Clicked="ClickDeleteObject" VerticalOptions="EndAndExpand"/>
+    </StackLayout>
+</ContentPage>

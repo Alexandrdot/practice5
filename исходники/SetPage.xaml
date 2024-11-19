@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practice5MauiApp.SetPage"
+             Title="SetPage"
+             BackgroundColor="LightGray">
+    <ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="LightBlue" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="HeightRequest" Value="80"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="LightBlue" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="HeightRequest" Value="80"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </ContentPage.Resources>
+    
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="  Введите данные" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
+        <Entry x:Name="newfirm" Placeholder="Новая фирма" Text="{Binding Firm}" />
+        <Entry x:Name="newmodel" Placeholder="Новая модель" Text="{Binding Model}" />
+        <Entry x:Name="newprice" Placeholder="Новая цена" Text="{Binding Price}" />
+        <Entry x:Name="newtorque" Placeholder="Новый крутящий момент" Text="{Binding Torque}"/>
+        <Entry x:Name="newtimeworking" Placeholder="Новое время работы" Text="{Binding TimeWorking}" /> 
+        <Button Text="Сохранить" Clicked="SaveChanges" />
+    </StackLayout>
+
+
+
+    
+</ContentPage>

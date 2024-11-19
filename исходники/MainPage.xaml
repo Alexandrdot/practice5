@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practice5MauiApp.MainPage"
+             BackgroundColor="LightGray">
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="LightBlue" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="HeightRequest" Value="80"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    <AbsoluteLayout VerticalOptions="Center" HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="0,0,0,0"
+                 AbsoluteLayout.LayoutFlags="All">
+        <StackLayout >
+            <Label Text="  Добро пожаловать!" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="  Выберите действие." FontSize="30" FontAttributes="Bold" TextColor="Black"/>
+            <Button x:Name="buttonCar" Text="Добавить автомобиль" Clicked="ClickedOpenCarPage"/>
+            <Button x:Name="buttonScooter" Text="Добавить электросамокат" Clicked="ClickedOpenEScooterPage"/>
+            <Button x:Name="buttonTransport" Text="Добавить т/с" Clicked="ClickedOpenTransportmanagerPage"/>
+            <Button x:Name="buttonInfo" Text="Вывести список" Clicked="ClickedOpenPrintInfoPage"/>
+            <Button x:Name="buttonDelete" Text="Удалить элемент" Clicked="ClickedOpenDeletePage"/>
+            <Button x:Name="buttonSet" Text="Изменить характеристики" Clicked="ClickedOpenSetTransportPage"/>
+        </StackLayout>
+    </AbsoluteLayout> 
+</ContentPage>
+
